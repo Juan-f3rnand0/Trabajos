@@ -1,0 +1,87 @@
+h1{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    align-content: center;
+    color: #FF420E;
+    text-align: center;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+body{
+    text-align: center;
+    background: black;
+    width: 940px;
+    margin: 15px auto;
+    background-size: cover;
+    background-image: url(imagenes/fondo2.jpg);
+    background-position: center;
+}
+
+
+.menu{
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.menu li{
+    list-style: none;
+    padding: 5px;
+    font: bold 15px verdana;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.seccion{
+    width: 600px;
+    margin: 20px;
+    float: left;
+}
+
+article{
+    background: #fffbcc;
+    border: 1px solid #999;
+    margin-bottom: 15px;
+    position: relative;
+    left: 150px;
+    border-radius: 10px;
+}
+
+time{
+    color: #999;
+}
+
+
+.columna{
+    width: 300px;
+    float: left;
+    margin: 20px 0px;
+}
+
+.pie{
+    clear: both;
+    padding: 20px;
+    background: #2d3436;
+    color: #ffffff;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin: auto;
+    height: 170px;
+    border-radius: 7px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.2);
+}

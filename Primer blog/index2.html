@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para Registro de Clientes</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+<body>
+    <h1>Formulario Registro de Clientes</h1>
+    <form action="#" method="post">
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required minlength="3" maxlength="30"><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required minlength="3" maxlength="30"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required minlength="10" maxlength="30" pattern="[a-z0-9,-]+"><br><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required minlength="8" maxlength="16"><br><br>
+        <label for="genero">Género:</label>
+        <input type="radio" id="genero_masculino" name="genero" value="masculino" >
+        <label for="genero_masculino">Masculino</label>
+        <input type="radio" id="genero_femenino" name="genero" value="femenino">
+        <label for="genero_femenino">Femenino</label><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="number" id="telefono" name="telefono" placeholder="telefono" required min="10" maxlength="10"><br><br>
+        <label for="direccion">Dirección</label>
+        <input type="text" id="dirección" name="direccion" minlength="Dirección" placeholder="Dirección" required min="5" maxlength="30"><br><br>
+
+        <h2>Selecciona una opción:</h2>
+
+        <!-- Menú desplegable -->
+        <select id="opciones" >
+            <option value="opcion1">Reginen simplificado</option>
+            <option value="opcion2">Régimen común</option>
+            <option value="opcion3">Gran contribuyente</option>
+            <option value="opcion4">Auto retenedor</option>
+        </select><br><br>
+
+        <label for="intereses">Intereses:</label><br>
+        <input type="checkbox" id="interes_tecnologia" name="intereses" value="tecnologia">
+        <label for="interes_tecnologia">Tecnología</label>
+        <input type="checkbox" id="interes_viajes" name="intereses" value="viajes">
+        <label for="interes_viajes">Viajes</label>
+        <input type="checkbox" id="interes_deportes" name="intereses" value="deportes">
+        <label for="interes_deportes">Deportes</label><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="6" cols="50"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="text">Limpiar</button>
+    </form>
+</body>
+</html>
